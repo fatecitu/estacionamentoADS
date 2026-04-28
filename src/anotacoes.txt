@@ -1,0 +1,14 @@
+enriquegmx@luffygadgets.com
+40abem5qeHDOP4J2
+
+
+https://aegvldmlmtzsowxjrttr.supabase.co
+sb_publishable_owUGB269XlFbziDvEzTOgA_8zfg3ooo
+
+
+git init
+git add .
+git commit -m "Vite zerado"
+
+
+git remote set-url origin https://seuusario@github.com/seusuario/estacionamento.git
