@@ -15,13 +15,51 @@
       <button id="btn-logout" class="bg-red-500 text-white p-4 rounded">Sair</button>
     </header>
     <div>
-      <a href="menu.html" class="text-blue-600 mb-4">⬅️Voltar ao Menu</a>
+      <a href="menu.html" class="text-blue-600 mb-4 inline-block">Voltar ao Menu</a>
       <h1 class="text-xl font-bold text-gray-600">Marcas e Modelos</h1>
-      <table class="w-full text-left mt-4">
+
+      <section class="bg-white mt-6 p-6 rounded-lg shadow-md">
+        <h2 id="titulo-formulario" class="text-lg font-semibold text-gray-700 mb-4">Incluir modelo</h2>
+        <form id="form-modelo" class="grid gap-4 md:grid-cols-2">
+          <input type="hidden" id="modelo-id">
+          <div>
+            <label for="marca" class="label-form">Marca</label>
+            <input
+              type="text"
+              id="marca"
+              required
+              class="w-full mt-1 p-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 outline-none"
+              placeholder="Ex.: Fiat"
+            >
+          </div>
+          <div>
+            <label for="descricao" class="label-form">Modelo</label>
+            <input
+              type="text"
+              id="descricao"
+              required
+              class="w-full mt-1 p-2 border border-slate-300 rounded-md focus:ring-2 focus:ring-blue-500 outline-none"
+              placeholder="Ex.: Argo"
+            >
+          </div>
+          <div class="md:col-span-2 flex flex-wrap gap-3">
+            <button type="submit" id="btn-salvar" class="bg-blue-600 text-white py-2 px-5 rounded-md hover:bg-blue-700">
+              Salvar
+            </button>
+            <button type="button" id="btn-cancelar" class="bg-gray-500 text-white py-2 px-5 rounded-md hover:bg-gray-600 hidden">
+              Cancelar
+            </button>
+          </div>
+        </form>
+        <div id="message" class="mt-4 text-sm hidden"></div>
+      </section>
+
+      <table class="w-full text-left mt-6 bg-white shadow-md">
         <thead>
           <tr class="bg-white p-6">
             <th class="p-3">Marca</th>
             <th class="p-3">Modelo</th>
+            <th class="p-3 text-right">Acoes</th>
           </tr>
         </thead>
         <tbody id="tabela-modelos"></tbody>
