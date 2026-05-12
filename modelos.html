@@ -14,22 +14,21 @@
       <h1 class="text-2xl font-bold text-gray-800 p-4">Sistema de Estacionamento</h1>
       <button id="btn-logout" class="bg-red-500 text-white p-4 rounded">Sair</button>
     </header>
-    <!-- botões do Menu -->
-     <div class="grid grid-cols-2 gap-6">
-      <a href="veiculos.html" class="block p-10 bg-green-600 text-white rounded-lg shadow-lg hover:bg-purple-600 transition text-center">
-        <span class="text-xl font-semibold">🚗 Veículos</span>
-      </a>
-      <a href="modelos.html" class="block p-10 bg-orange-600 text-white rounded-lg shadow-lg hover:bg-purple-600 transition text-center">
-        <span class="text-xl font-semibold">🚙 Modelos</span>
-      </a>
-
-
-     </div>
-   
-
-   
+    <div>
+      <a href="menu.html" class="text-blue-600 mb-4">⬅️Voltar ao Menu</a>
+      <h1 class="text-xl font-bold text-gray-600">Marcas e Modelos</h1>
+      <table class="w-full text-left mt-4">
+        <thead>
+          <tr class="bg-white p-6">
+            <th class="p-3">Marca</th>
+            <th class="p-3">Modelo</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-modelos"></tbody>
+      </table>
+    </div>
   </div>
-  <script type="module" src="/src/menu.js"></script>
+  <script type="module" src="/src/modelos.js"></script>
 </body>
 
 </html>
